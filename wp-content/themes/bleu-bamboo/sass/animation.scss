@@ -1,0 +1,194 @@
+/* HERO -------------------------------------------------*/
+.hero {
+  .container-animation {
+    overflow: hidden;
+    img.img-header, h1 {
+      -webkit-transition: all .8s ease-out;
+      -moz-transition: all .8s ease-out;
+      -o-transition: all .8s ease-out;
+      transition: all .8s ease-out;
+    }
+  }
+  &:hover {
+    .container-animation {
+      img.img-header {
+        transform: scale(1.1);
+      }
+      h1 {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+/* SECTIONS -------------------------------------------------*/
+.section-animate {
+  overflow: hidden;
+
+  // ornerment first animation
+  .ornement-animation {
+    overflow: hidden;
+    img {
+      transform: translate(0, 100%);
+      transition: all 1s ease-out .2s;
+    }
+  }
+
+  // title second animation
+  .title-animation {
+    position: relative;
+    overflow: hidden;
+    h2 {
+      transform: translate(0, 130%);
+      transition: all 1s ease-out .8s;
+    }
+  }
+
+  // text third animation
+  .text-animation {
+    opacity: 0;
+    transition: all 0.7s ease-out 1.4s;
+  }
+
+  // image forth animation
+  .img-animation {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      background-color: #2C2C2C;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      transition: all 0.7s ease-out 1.6s;
+    }
+  }
+
+  // slider forth animation
+  .slider-animation {
+    .sous-container-slider {
+      transform: translate(100%, 0);
+      transition: all 1s ease-out 1.6s;
+      .slick-dots {
+        opacity: 0;
+        transition: all .8s ease-out 3s;
+      }
+    }
+  }
+
+  // schema animation
+  .schema-animation {
+    img.schema {
+      transform: translate(0, -110%);
+      transition: all 1s ease-out 1.6s;
+    }
+    .legend {
+      opacity: 0;
+      &.nez {
+        transition: all .5s ease-out 2.6s;
+      }
+      &.dos {
+        transition: all .5s ease-out 2.8s;
+      }
+      &.talon {
+        transition: all .5s ease-out 3s;
+      }
+      &.pivot {
+        transition: all .5s ease-out 3.2s;
+      }
+      &.crochet {
+        transition: all .5s ease-out 3.4s;
+      }
+      &.clou-de-fixation {
+        transition: all .5s ease-out 3.8s;
+      }
+      &.manche {
+        transition: all .5s ease-out 4.2s;
+      }
+    }
+  }
+
+  // column animation
+  .col-animation {
+    .block-container {
+      &.block-1 {
+        transition: all 1s ease-out;
+        transform: translate(0, -120%);
+        @media screen and (max-width: 992px) {
+          transform: translate(100%, 0);
+        }
+      }
+      &.block-2 {
+        transition: all 1s ease-out 1s;
+        transform: translate(0, -143%);
+        @media screen and (max-width: 992px) {
+          transform: translate(-100%, 0);
+        }
+      }
+      &.block-3 {
+        transition: all 1s ease-out 2s;
+        transform: translate(0, -158%);
+        @media screen and (max-width: 992px) {
+          transform: translate(100%, 0);
+        }
+      }
+    }
+  }
+
+  // elements animated
+  &.animated {
+
+    // ornement animated
+    .ornement-animation {
+      img {
+        transform: translate(0);
+      }
+    }
+
+    // title animated
+    .title-animation {
+      h2 {
+        transform: translate(0);
+      }
+    }
+
+    // text animated
+    .text-animation {
+      opacity: 1;
+    }
+
+    //image animated
+    .img-animation {
+      &:before {
+        opacity: 0;
+      }
+    }
+
+    // slider animated
+    .slider-animation {
+      .sous-container-slider {
+        transform: translate(0);
+        .slick-dots {
+          opacity: 1;
+        }
+      }
+    }
+
+    // schema animated
+    .schema-animation {
+      img.schema {
+        transform: translate(0);
+      }
+      .legend {
+        opacity: 1;
+      }
+    }
+
+    //column animated
+    .col-animation {
+      .block-container {
+        transform: translate(0);
+      }
+    }
+  }
+}

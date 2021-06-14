@@ -1,0 +1,180 @@
+/* HERO -------------------------------------------------*/
+/* line 3, sass/animation.scss */
+.hero .container-animation {
+  overflow: hidden;
+}
+/* line 5, sass/animation.scss */
+.hero .container-animation img.img-header, .hero .container-animation h1 {
+  -webkit-transition: all .8s ease-out;
+  -moz-transition: all .8s ease-out;
+  -o-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+}
+/* line 14, sass/animation.scss */
+.hero:hover .container-animation img.img-header {
+  transform: scale(1.1);
+}
+/* line 17, sass/animation.scss */
+.hero:hover .container-animation h1 {
+  transform: scale(0.9);
+}
+
+/* SECTIONS -------------------------------------------------*/
+/* line 25, sass/animation.scss */
+.section-animate {
+  overflow: hidden;
+}
+/* line 29, sass/animation.scss */
+.section-animate .ornement-animation {
+  overflow: hidden;
+}
+/* line 31, sass/animation.scss */
+.section-animate .ornement-animation img {
+  transform: translate(0, 100%);
+  transition: all 1s ease-out .2s;
+}
+/* line 38, sass/animation.scss */
+.section-animate .title-animation {
+  position: relative;
+  overflow: hidden;
+}
+/* line 41, sass/animation.scss */
+.section-animate .title-animation h2 {
+  transform: translate(0, 130%);
+  transition: all 1s ease-out .8s;
+}
+/* line 48, sass/animation.scss */
+.section-animate .text-animation {
+  opacity: 0;
+  transition: all 0.7s ease-out 1.4s;
+}
+/* line 54, sass/animation.scss */
+.section-animate .img-animation {
+  position: relative;
+}
+/* line 56, sass/animation.scss */
+.section-animate .img-animation:before {
+  position: absolute;
+  content: '';
+  background-color: #2C2C2C;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all 0.7s ease-out 1.6s;
+}
+/* line 69, sass/animation.scss */
+.section-animate .slider-animation .sous-container-slider {
+  transform: translate(100%, 0);
+  transition: all 1s ease-out 1.6s;
+}
+/* line 72, sass/animation.scss */
+.section-animate .slider-animation .sous-container-slider .slick-dots {
+  opacity: 0;
+  transition: all .8s ease-out 3s;
+}
+/* line 81, sass/animation.scss */
+.section-animate .schema-animation img.schema {
+  transform: translate(0, -110%);
+  transition: all 1s ease-out 1.6s;
+}
+/* line 85, sass/animation.scss */
+.section-animate .schema-animation .legend {
+  opacity: 0;
+}
+/* line 87, sass/animation.scss */
+.section-animate .schema-animation .legend.nez {
+  transition: all .5s ease-out 2.6s;
+}
+/* line 90, sass/animation.scss */
+.section-animate .schema-animation .legend.dos {
+  transition: all .5s ease-out 2.8s;
+}
+/* line 93, sass/animation.scss */
+.section-animate .schema-animation .legend.talon {
+  transition: all .5s ease-out 3s;
+}
+/* line 96, sass/animation.scss */
+.section-animate .schema-animation .legend.pivot {
+  transition: all .5s ease-out 3.2s;
+}
+/* line 99, sass/animation.scss */
+.section-animate .schema-animation .legend.crochet {
+  transition: all .5s ease-out 3.4s;
+}
+/* line 102, sass/animation.scss */
+.section-animate .schema-animation .legend.clou-de-fixation {
+  transition: all .5s ease-out 3.8s;
+}
+/* line 105, sass/animation.scss */
+.section-animate .schema-animation .legend.manche {
+  transition: all .5s ease-out 4.2s;
+}
+/* line 114, sass/animation.scss */
+.section-animate .col-animation .block-container.block-1 {
+  transition: all 1s ease-out;
+  transform: translate(0, -120%);
+}
+@media screen and (max-width: 992px) {
+  /* line 114, sass/animation.scss */
+  .section-animate .col-animation .block-container.block-1 {
+    transform: translate(100%, 0);
+  }
+}
+/* line 121, sass/animation.scss */
+.section-animate .col-animation .block-container.block-2 {
+  transition: all 1s ease-out 1s;
+  transform: translate(0, -143%);
+}
+@media screen and (max-width: 992px) {
+  /* line 121, sass/animation.scss */
+  .section-animate .col-animation .block-container.block-2 {
+    transform: translate(-100%, 0);
+  }
+}
+/* line 128, sass/animation.scss */
+.section-animate .col-animation .block-container.block-3 {
+  transition: all 1s ease-out 2s;
+  transform: translate(0, -158%);
+}
+@media screen and (max-width: 992px) {
+  /* line 128, sass/animation.scss */
+  .section-animate .col-animation .block-container.block-3 {
+    transform: translate(100%, 0);
+  }
+}
+/* line 143, sass/animation.scss */
+.section-animate.animated .ornement-animation img {
+  transform: translate(0);
+}
+/* line 150, sass/animation.scss */
+.section-animate.animated .title-animation h2 {
+  transform: translate(0);
+}
+/* line 156, sass/animation.scss */
+.section-animate.animated .text-animation {
+  opacity: 1;
+}
+/* line 162, sass/animation.scss */
+.section-animate.animated .img-animation:before {
+  opacity: 0;
+}
+/* line 169, sass/animation.scss */
+.section-animate.animated .slider-animation .sous-container-slider {
+  transform: translate(0);
+}
+/* line 171, sass/animation.scss */
+.section-animate.animated .slider-animation .sous-container-slider .slick-dots {
+  opacity: 1;
+}
+/* line 179, sass/animation.scss */
+.section-animate.animated .schema-animation img.schema {
+  transform: translate(0);
+}
+/* line 182, sass/animation.scss */
+.section-animate.animated .schema-animation .legend {
+  opacity: 1;
+}
+/* line 189, sass/animation.scss */
+.section-animate.animated .col-animation .block-container {
+  transform: translate(0);
+}
