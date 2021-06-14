@@ -45,6 +45,8 @@ define( 'DB_CHARSET', 'utf8mb4' );
  */
 define( 'DB_COLLATE', '' );
 
+define('ENABLE_CACHE', false);
+
 /**#@+
  * Clés uniques d’authentification et salage.
  *
