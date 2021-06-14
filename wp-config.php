@@ -20,18 +20,21 @@
  * @package WordPress
  */
 
-// ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
-/** Nom de la base de données de WordPress. */
-define( 'DB_NAME', 'b54qcfydv5ad1t88fpou' );
+$is_localhost = ($_SERVER['REMOTE_ADDR'] == "127.0.0.1" or $_SERVER['REMOTE_ADDR'] == "::1" or $_SERVER['REMOTE_ADDR'] == "localhost");
 
-/** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', 'uo03gab7lkkylb2g' );
+if ( $is_localhost ):
+    define('DB_NAME', 'dev_bleu_bamboo');
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', 'root');
+    define('DB_HOST', 'localhost');
 
-/** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', 'azjrbl8PmpTIhUetI40e' );
-
-/** Adresse de l’hébergement MySQL. */
-define( 'DB_HOST', 'b54qcfydv5ad1t88fpou-mysql.services.clever-cloud.com' );
+    define( 'WP_DEBUG', true ); // Activer le debug en local seulement
+else:
+    define('DB_NAME', 'b54qcfydv5ad1t88fpou');
+    define('DB_USER', 'uo03gab7lkkylb2g');
+    define('DB_PASSWORD', 'azjrbl8PmpTIhUetI40e');
+    define('DB_HOST', 'b54qcfydv5ad1t88fpou-mysql.services.clever-cloud.com');
+endif;
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
