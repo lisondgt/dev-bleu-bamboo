@@ -151,6 +151,16 @@ function bleu_bamboo_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'bleu_bamboo_scripts' );
 
+function bleu_bamboo_mes_menus() {
+    register_nav_menus(
+        array(
+            'primary-menu-left' => __( 'Primary menu left' ),
+            'primary-menu-right' => __( 'Primary menu right' )
+        )
+    );
+}
+add_action( 'init', 'bleu_bamboo_mes_menus' );
+
 /**
  * Implement the Custom Header feature.
  */

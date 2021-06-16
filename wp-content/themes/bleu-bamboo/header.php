@@ -45,15 +45,24 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bleu-bamboo' ); ?></button>
+		<nav id="site-navigation-left" class="main-navigation">
 			<?php
 			wp_nav_menu(
 				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
+					'theme_location' => 'primary-menu-left',
+					'menu_id'        => 'primary-menu-left',
 				)
 			);
 			?>
-		</nav><!-- #site-navigation -->
+		</nav>
+        <nav id="site-navigation-right" class="main-navigation">
+            <?php
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'primary-menu-right',
+                    'menu_id'        => 'primary-menu-right',
+                )
+            );
+            ?>
+        </nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
