@@ -12,20 +12,55 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bleu-bamboo' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'bleu-bamboo' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bleu-bamboo' ), 'bleu-bamboo', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+        <div class="container">
+            <div id="footer-columns" class="row">
+                <div id="footer-column-1">
+                    <?php
+                    if(is_active_sidebar('footer-column-1')){
+                        dynamic_sidebar('footer-column-1');
+                    }
+                    ?>
+                </div>
+                <div id="footer-column-2">
+                    <?php
+                    if(is_active_sidebar('footer-column-2')){
+                        dynamic_sidebar('footer-column-2');
+                    }
+                    ?>
+                </div>
+                <div id="footer-column-3">
+                    <?php
+                    if(is_active_sidebar('footer-column-3')){
+                        dynamic_sidebar('footer-column-3');
+                    }
+                    ?>
+                </div>
+                <div id="footer-column-4">
+                    <?php
+                    if(is_active_sidebar('footer-column-4')){
+                        dynamic_sidebar('footer-column-4');
+                    }
+                    ?>
+                </div>
+            </div>
+            <div class="row footer-second">
+                <div id="footer-second-column-1">
+                    <?php
+                    if(is_active_sidebar('footer-second-column-1')){
+                        dynamic_sidebar('footer-second-column-1');
+                    }
+                    ?>
+                </div>
+                <div id="footer-second-column-2">
+                    <?php
+                    if(is_active_sidebar('footer-second-column-2')){
+                        dynamic_sidebar('footer-second-column-2');
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+	</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

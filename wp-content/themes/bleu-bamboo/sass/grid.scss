@@ -5,6 +5,7 @@
 .container-lg,
 .container-md,
 .container-sm {
+  box-sizing: border-box;
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -3470,4 +3471,26 @@
   }
 }
 
-/*# sourceMappingURL=bootstrap-grid.css.map */
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
+.order-5 {
+  order: 5;
+}
+
+.order-6 {
+  order: 6;
+}
