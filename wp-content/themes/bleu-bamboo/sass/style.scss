@@ -76,16 +76,18 @@ img {
 
 .custom-underline {
   position: relative;
-  &:after {
-    content: '';
-    background-image: url("images/elements_graphiques/underline.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+  .icon-underline {
     position: absolute;
-    bottom: 0;
     left: 0;
+    bottom: -10px;
     width: 100%;
-    height: 18px;
+    padding-top: 9%;
+    display: block;
+    background-image: url("images/elements_graphiques/underline.svg");
+    background-size: cover;
+    -moz-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   @media screen and (max-width: 1200px) {
     &:after {
@@ -290,6 +292,7 @@ h5, .h5 {
   font-size: $texte-labeur-m-font-size;
   font-weight: $font-regular;
   color: $primary-shade;
+  letter-spacing: 0.1em;
 }
 
 .texte-labeur-s-regular {
@@ -297,6 +300,15 @@ h5, .h5 {
   font-size: $texte-labeur-s-font-size;
   font-weight: $font-regular;
   color: $primary-shade;
+}
+
+.up-titre {
+  font-family: $font-red-hat-display;
+  font-size: $up-titre-font-size;
+  font-weight: $font-regular;
+  color: $primary-shade;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
 }
 
 
@@ -434,7 +446,8 @@ button:focus {
   &.btn-primary,
   &.btn-primary:not(:disabled) {
     text-transform: uppercase;
-    padding: 0;
+    letter-spacing: 0.05em;
+    padding: 12px 0;
     color: $primary-shade;
 
     &:after {
@@ -517,24 +530,31 @@ header {
           transition: all .15s ease-in-out;
 
           &:after {
-            background: none repeat scroll 0 0 transparent;
-            bottom: 0;
-            content: "";
-            display: block;
-            height: 2px;
-            left: 0;
+            content: '';
+            fill: none;
+            background-image: url(images/elements_graphiques/circle.svg);
+            background-size: contain;
+            -moz-background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
             position: absolute;
-            background: $primary-shade;
-            transition: width .5s ease 0s, right .15s ease 0s;
-            width: 0;
+            top: 50%;
+            left: 50%;
+            width: calc(100% + 60px);
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+            z-index: -1;
+            padding-top: 65%;
           }
 
           &:hover {
             font-weight: $font-bold;
 
             &:after {
-              width: 100%;
-              left: 0;
+              stroke-dashoffset: 0;
+              opacity: 1;
+              transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             }
           }
         }
@@ -672,7 +692,8 @@ header {
   .header {
     position: relative;
     .img-bg-header {
-      min-height: 600px;
+      width: 100%;
+      min-height: 100vh;
     }
     .content-header {
       position: absolute;
@@ -711,11 +732,27 @@ header {
   .container {
     z-index: 1;
   }
+  .colonne-image.order-1 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .colonne-image.order-2 {
+    display: flex;
+    justify-content: flex-end;
+  }
   .element-graphique {
     z-index: 0;
     position: absolute;
     right: 0;
     top: 0;
+
+    &.graphique-arrow {
+      top: -145px;
+    }
+
+    &.graphique-cloud {
+      top: 30px;
+    }
 
     @media screen and (max-width: 768px) {
       display: none;
@@ -737,11 +774,10 @@ header {
     margin-bottom: 2rem;
   }
   .container-texte {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
+    text-align: center;
+    .btn {
+      margin: auto;
+    }
   }
 }
 

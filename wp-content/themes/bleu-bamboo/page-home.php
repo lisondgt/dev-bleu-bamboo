@@ -55,6 +55,23 @@ get_header();
                             endif;
                         endif; ?>
 
+                        <?php if ($style['taille_colonne'] === '6/6'):
+                            $colonne_image = 'col-12 col-md-6';
+                            $colonne_texte = 'col-12 col-md-6';
+                        elseif ($style['taille_colonne'] === '7/5' & $style['position_image'] === 'gauche'):
+                            $colonne_image = 'col-12 col-md-7';
+                            $colonne_texte = 'col-12 col-md-5';
+                        elseif ($style['taille_colonne'] === '7/5' & $style['position_image'] === 'droite'):
+                            $colonne_image = 'col-12 col-md-5';
+                            $colonne_texte = 'col-12 col-md-7';
+                        elseif ($style['taille_colonne'] === '4/8' & $style['position_image'] === 'gauche'):
+                            $colonne_image = 'col-12 col-md-4';
+                            $colonne_texte = 'col-12 col-md-8';
+                        elseif ($style['taille_colonne'] === '4/8' & $style['position_image'] === 'droite'):
+                            $colonne_image = 'col-12 col-md-8';
+                            $colonne_texte = 'col-12 col-md-4';
+                        endif; ?>
+
                         <?php if ($style['position_image'] === 'gauche'):
                             $position_image_class = 'order-1';
                             $position_texte_class = 'order-2';
@@ -66,15 +83,16 @@ get_header();
                         <div class="bloc-texte-image-colonnes <?php if ($style['background_color']): echo $style['background_color']; endif; ?>">
 
                             <?php if ($style['element_graphique']): ?>
-                                <img src="<?php echo $style['element_graphique']; ?>" class="element-graphique"/>
+                                <img src="<?php echo $style['element_graphique']; ?>"
+                                     class="element-graphique <?php if ($style['classe_element_graphique']): echo $style['classe_element_graphique']; endif; ?>"/>
                             <?php endif; ?>
 
-                            <div class="<?php echo $container_class.' '.$p_0_class; ?>">
+                            <div class="<?php echo $container_class . ' ' . $p_0_class; ?>">
                                 <div class="row align-items-center">
-                                    <div class="col-12 col-md-6 mb-5 mb-md-0 <?php echo $position_image_class.' '.$p_0_class; ?>">
+                                    <div class="colonne-image mb-5 mb-md-0 <?php echo $colonne_image . ' ' . $position_image_class . ' ' . $p_0_class; ?>">
                                         <img src="<?php the_sub_field('image'); ?>"/>
                                     </div>
-                                    <div class="col-12 col-md-6 <?php echo $position_texte_class; ?>">
+                                    <div class="<?php echo $colonne_texte . ' ' . $position_texte_class; ?>">
                                         <?php the_sub_field('texte'); ?>
                                     </div>
                                 </div>
@@ -93,7 +111,11 @@ get_header();
                             <div class="container">
                                 <?php the_sub_field('titre'); ?>
                                 <img src="<?php the_sub_field('image'); ?>"/>
-                                <div class="container-texte"><?php the_sub_field('texte'); ?></div>
+                                <div class="row justify-content-center container-texte">
+                                    <div class="col-12 col-md-8">
+                                        <?php the_sub_field('texte'); ?>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     <?php
