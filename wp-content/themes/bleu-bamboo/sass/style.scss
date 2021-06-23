@@ -729,6 +729,7 @@ header {
   display: flex;
   flex-direction: column;
   padding-top: 4rem;
+  margin-bottom: -1px;
   .container {
     z-index: 1;
   }

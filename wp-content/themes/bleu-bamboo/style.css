@@ -5326,74 +5326,75 @@ header .nav-container .toggle-navbar.toggle {
   display: flex;
   flex-direction: column;
   padding-top: 4rem;
+  margin-bottom: -1px;
 }
-/* line 732, sass/style.scss */
+/* line 733, sass/style.scss */
 .bloc-texte-image-colonnes .container {
   z-index: 1;
 }
-/* line 735, sass/style.scss */
+/* line 736, sass/style.scss */
 .bloc-texte-image-colonnes .colonne-image.order-1 {
   display: flex;
   justify-content: flex-start;
 }
-/* line 739, sass/style.scss */
+/* line 740, sass/style.scss */
 .bloc-texte-image-colonnes .colonne-image.order-2 {
   display: flex;
   justify-content: flex-end;
 }
-/* line 743, sass/style.scss */
+/* line 744, sass/style.scss */
 .bloc-texte-image-colonnes .element-graphique {
   z-index: 0;
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 749, sass/style.scss */
+/* line 750, sass/style.scss */
 .bloc-texte-image-colonnes .element-graphique.graphique-arrow {
   top: -145px;
 }
-/* line 753, sass/style.scss */
+/* line 754, sass/style.scss */
 .bloc-texte-image-colonnes .element-graphique.graphique-cloud {
   top: 30px;
 }
 @media screen and (max-width: 768px) {
-  /* line 743, sass/style.scss */
+  /* line 744, sass/style.scss */
   .bloc-texte-image-colonnes .element-graphique {
     display: none;
   }
 }
-/* line 761, sass/style.scss */
+/* line 762, sass/style.scss */
 .bloc-texte-image-colonnes .transition {
   width: 100%;
   margin-bottom: -1px;
 }
 
 /* BLOC IMAGE + TEXTE FULL SCREEN -------------------------------------------------*/
-/* line 768, sass/style.scss */
+/* line 769, sass/style.scss */
 .bloc-texte-image-full-screen {
   margin-bottom: -1px;
   padding-top: 4rem;
   text-align: center;
 }
-/* line 772, sass/style.scss */
+/* line 773, sass/style.scss */
 .bloc-texte-image-full-screen h2 {
   margin-bottom: 2rem;
 }
-/* line 775, sass/style.scss */
+/* line 776, sass/style.scss */
 .bloc-texte-image-full-screen img {
   margin-bottom: 2rem;
 }
-/* line 778, sass/style.scss */
+/* line 779, sass/style.scss */
 .bloc-texte-image-full-screen .container-texte {
   text-align: center;
 }
-/* line 780, sass/style.scss */
+/* line 781, sass/style.scss */
 .bloc-texte-image-full-screen .container-texte .btn {
   margin: auto;
 }
 
 /* FOOTER -------------------------------------------------*/
-/* line 787, sass/style.scss */
+/* line 788, sass/style.scss */
 footer.site-footer {
   position: relative;
   background-color: #093243;
@@ -5402,7 +5403,7 @@ footer.site-footer {
   color: #F1EFEC;
   margin-top: 4rem;
 }
-/* line 795, sass/style.scss */
+/* line 796, sass/style.scss */
 footer.site-footer:before {
   content: '';
   width: 100%;
@@ -5411,7 +5412,7 @@ footer.site-footer:before {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 804, sass/style.scss */
+/* line 805, sass/style.scss */
 footer.site-footer:after {
   content: '';
   position: absolute;
@@ -5423,172 +5424,172 @@ footer.site-footer:after {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 816, sass/style.scss */
+/* line 817, sass/style.scss */
 footer.site-footer #footer-columns {
   display: flex;
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
-/* line 821, sass/style.scss */
+/* line 822, sass/style.scss */
 footer.site-footer #footer-columns #footer-column-1 {
   padding: 0 15px;
   flex: 0 0 40%;
 }
-/* line 826, sass/style.scss */
+/* line 827, sass/style.scss */
 footer.site-footer #footer-columns #footer-column-2 {
   padding: 0 15px;
   flex: 0 0 20%;
 }
-/* line 831, sass/style.scss */
+/* line 832, sass/style.scss */
 footer.site-footer #footer-columns #footer-column-3 {
   padding: 0 15px;
   flex: 0 0 20%;
 }
-/* line 836, sass/style.scss */
+/* line 837, sass/style.scss */
 footer.site-footer #footer-columns #footer-column-4 {
   padding: 0 15px;
   flex: 0 0 20%;
 }
 @media screen and (max-width: 1200px) {
-  /* line 842, sass/style.scss */
+  /* line 843, sass/style.scss */
   footer.site-footer #footer-columns #footer-column-1 {
     flex: 0 0 35%;
   }
-  /* line 845, sass/style.scss */
+  /* line 846, sass/style.scss */
   footer.site-footer #footer-columns #footer-column-2 {
     flex: 0 0 21%;
   }
-  /* line 848, sass/style.scss */
+  /* line 849, sass/style.scss */
   footer.site-footer #footer-columns #footer-column-3 {
     flex: 0 0 21%;
   }
-  /* line 851, sass/style.scss */
+  /* line 852, sass/style.scss */
   footer.site-footer #footer-columns #footer-column-4 {
     flex: 0 0 21%;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 856, sass/style.scss */
+  /* line 857, sass/style.scss */
   footer.site-footer #footer-columns #footer-column-1 {
     flex: 0 0 30%;
   }
-  /* line 859, sass/style.scss */
+  /* line 860, sass/style.scss */
   footer.site-footer #footer-columns #footer-column-2 {
     flex: 0 0 30%;
   }
-  /* line 862, sass/style.scss */
+  /* line 863, sass/style.scss */
   footer.site-footer #footer-columns #footer-column-3 {
     flex: 0 0 30%;
   }
-  /* line 865, sass/style.scss */
+  /* line 866, sass/style.scss */
   footer.site-footer #footer-columns #footer-column-4 {
     flex: 0 0 10%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 871, sass/style.scss */
+  /* line 872, sass/style.scss */
   footer.site-footer #footer-columns #footer-column-1 {
     flex: 0 0 100%;
     display: flex;
     justify-content: center;
     padding: 1rem 15px;
   }
-  /* line 877, sass/style.scss */
+  /* line 878, sass/style.scss */
   footer.site-footer #footer-columns #footer-column-2 {
     flex: 0 0 100%;
     display: flex;
     justify-content: center;
     padding: 1rem 15px;
   }
-  /* line 883, sass/style.scss */
+  /* line 884, sass/style.scss */
   footer.site-footer #footer-columns #footer-column-3 {
     flex: 0 0 100%;
     display: flex;
     justify-content: center;
     padding: 1rem 15px;
   }
-  /* line 889, sass/style.scss */
+  /* line 890, sass/style.scss */
   footer.site-footer #footer-columns #footer-column-4 {
     flex: 0 0 100%;
     display: flex;
     justify-content: center;
     padding: 1rem 15px;
   }
-  /* line 896, sass/style.scss */
+  /* line 897, sass/style.scss */
   footer.site-footer #footer-columns .widget_nav_menu .menu .menu-item a {
     justify-content: center;
   }
-  /* line 900, sass/style.scss */
+  /* line 901, sass/style.scss */
   footer.site-footer #footer-columns p {
     text-align: center;
   }
 }
-/* line 907, sass/style.scss */
+/* line 908, sass/style.scss */
 footer.site-footer .widget_nav_menu .menu {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 913, sass/style.scss */
+/* line 914, sass/style.scss */
 footer.site-footer .widget_nav_menu .menu .menu-item a {
   display: flex;
   color: #F1EFEC;
   text-decoration: none;
   padding: .5rem 0;
 }
-/* line 919, sass/style.scss */
+/* line 920, sass/style.scss */
 footer.site-footer .widget_nav_menu .menu .menu-item a:hover {
   font-weight: 400;
   text-decoration: underline;
 }
-/* line 926, sass/style.scss */
+/* line 927, sass/style.scss */
 footer.site-footer .widget_nav_menu .menu .menu-item:first-of-type a {
   padding-top: 0;
 }
-/* line 932, sass/style.scss */
+/* line 933, sass/style.scss */
 footer.site-footer .widget_nav_menu .menu .menu-item:last-of-type a {
   padding-bottom: 0;
 }
-/* line 939, sass/style.scss */
+/* line 940, sass/style.scss */
 footer.site-footer .widget_nav_menu #menu-social-media {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-/* line 945, sass/style.scss */
+/* line 946, sass/style.scss */
 footer.site-footer .widget_nav_menu #menu-footer-rgpd {
   display: flex;
 }
-/* line 949, sass/style.scss */
+/* line 950, sass/style.scss */
 footer.site-footer .widget_nav_menu #menu-footer-rgpd .menu-item a {
   display: flex;
   color: #F1EFEC;
   text-decoration: none;
   padding: 0;
 }
-/* line 955, sass/style.scss */
+/* line 956, sass/style.scss */
 footer.site-footer .widget_nav_menu #menu-footer-rgpd .menu-item a:after {
   content: '|';
   padding: 0 .5rem;
 }
-/* line 960, sass/style.scss */
+/* line 961, sass/style.scss */
 footer.site-footer .widget_nav_menu #menu-footer-rgpd .menu-item a:hover {
   font-weight: 400;
   text-decoration: underline;
 }
-/* line 967, sass/style.scss */
+/* line 968, sass/style.scss */
 footer.site-footer .widget_nav_menu #menu-footer-rgpd .menu-item:first-of-type a {
   padding-top: 0;
 }
-/* line 973, sass/style.scss */
+/* line 974, sass/style.scss */
 footer.site-footer .widget_nav_menu #menu-footer-rgpd .menu-item:last-of-type a {
   padding-bottom: 0;
 }
-/* line 976, sass/style.scss */
+/* line 977, sass/style.scss */
 footer.site-footer .widget_nav_menu #menu-footer-rgpd .menu-item:last-of-type a:after {
   content: '';
 }
-/* line 985, sass/style.scss */
+/* line 986, sass/style.scss */
 footer.site-footer .footer-second {
   font-size: 14px;
   display: flex;
@@ -5596,12 +5597,12 @@ footer.site-footer .footer-second {
   flex-wrap: wrap;
   padding-bottom: 4rem;
 }
-/* line 991, sass/style.scss */
+/* line 992, sass/style.scss */
 footer.site-footer .footer-second #footer-second-column-1 {
   flex: 0 0 77%;
   padding: 0 15px;
 }
-/* line 995, sass/style.scss */
+/* line 996, sass/style.scss */
 footer.site-footer .footer-second #footer-second-column-2 {
   flex: 0 0 21%;
   padding: 0 15px;
@@ -5609,28 +5610,28 @@ footer.site-footer .footer-second #footer-second-column-2 {
   justify-content: flex-end;
 }
 @media screen and (max-width: 767px) {
-  /* line 1002, sass/style.scss */
+  /* line 1003, sass/style.scss */
   footer.site-footer .footer-second #footer-second-column-1 {
     flex: 0 0 100%;
     padding: 1rem 15px;
   }
-  /* line 1006, sass/style.scss */
+  /* line 1007, sass/style.scss */
   footer.site-footer .footer-second #footer-second-column-2 {
     flex: 0 0 100%;
     padding: 1rem 15px;
     justify-content: center;
     text-align: center;
   }
-  /* line 1012, sass/style.scss */
+  /* line 1013, sass/style.scss */
   footer.site-footer .footer-second .widget_nav_menu #menu-footer-rgpd {
     flex-direction: column;
     align-items: center;
   }
-  /* line 1016, sass/style.scss */
+  /* line 1017, sass/style.scss */
   footer.site-footer .footer-second .widget_nav_menu #menu-footer-rgpd .menu-item a {
     padding: .5rem 0;
   }
-  /* line 1018, sass/style.scss */
+  /* line 1019, sass/style.scss */
   footer.site-footer .footer-second .widget_nav_menu #menu-footer-rgpd .menu-item a:after {
     content: '';
     padding: 0;
