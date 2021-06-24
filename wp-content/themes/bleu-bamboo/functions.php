@@ -284,3 +284,43 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * WooCommerce.
+ */
+function bleu_bamboo_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'bleu_bamboo_add_woocommerce_support' );
+
+remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 1 );
+
+function single_product_infos() {
+    get_template_part('woocommerce/single-product/general-infos');
+}
+
+add_action( 'woocommerce_after_single_product_summary', 'single_product_infos', 10 );
+
+add_action( 'woocommerce_after_single_product_summary', '_show_reviews', 11 );
+function _show_reviews() {
+    comments_template();
+}
+
+// To change add to cart text on single product page
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text' );
+function woocommerce_custom_single_add_to_cart_text() {
+    return __( 'Ajouter au panier', 'woocommerce' );
+}
+
+// To change add to cart text on product archives(Collection) page
+add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_custom_product_add_to_cart_text' );
+function woocommerce_custom_product_add_to_cart_text() {
+    return __( 'Ajouter au panier', 'woocommerce' );
+}
+
+
+

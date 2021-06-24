@@ -124,7 +124,7 @@ img {
 .bg-primary-shade {
   background-color: $primary-shade;
   * {
-    color: $fade-white;
+    color: $fade-white !important;
   }
 }
 
@@ -800,6 +800,7 @@ footer.site-footer {
     background-image: url("images/transitions/transition-papier-decoupe-2.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: -1px;
   }
 
   &:after {

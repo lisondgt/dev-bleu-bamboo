@@ -9,6 +9,9 @@ $woocommerce__color-error: #e2401c;
 $woocommerce__color-success: #0f834d;
 $woocommerce__color-info: #3d9cd2;
 
+// import files
+@import "import";
+
 // Import variables and mixins
 @import "abstracts/abstracts";
 
@@ -41,3 +44,435 @@ $woocommerce__color-info: #3d9cd2;
  * WooCommerce widgets
  */
 @import "plugins/woocommerce/widgets";
+
+/* SHOP PAGE -------------------------------------------------*/
+.woocommerce-shop {
+  main.site-main {
+    padding-top: 140px;
+  }
+}
+
+/* PRODUCTS -------------------------------------------------*/
+.products {
+  &.columns-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: -20px;
+    margin-left: -20px;
+
+    .product {
+      flex: 0 0 25%;
+      box-sizing: border-box;
+      margin: 1rem 0;
+      padding: 0 20px;
+
+      img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        margin-bottom: 5px;
+      }
+
+      @media screen and (max-width: 768px) {
+        flex: 0 0 50%;
+      }
+
+      @media screen and (max-width: 576px) {
+        flex: 0 0 100%;
+      }
+
+      a {
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: $font-regular;
+        color: $fade-black;
+      }
+
+      .price {
+        font-size: 24px;
+        font-weight: $font-bold;
+        display: flex;
+        justify-content: center;
+      }
+
+      .button, input[type="submit"] {
+        font-family: $font-red-hat-display;
+        display: flex;
+        align-items: baseline;
+        width: max-content;
+        font-weight: $font-bold;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        border: 1px solid $primary-shade;
+        padding: 1rem 1.5rem;
+        font-size: 16px;
+        transition: all .5s ease-out;
+        color: $fade-white;
+        background-color: $primary-shade;
+        margin: auto;
+        margin-top: 1rem;
+
+        &:hover,
+        &:focus,
+        &:active {
+          border-color: $primary-shade;
+          background-color: transparent;
+          color: $primary-shade;
+        }
+
+      }
+    }
+  }
+  &.columns-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: -20px;
+    margin-left: -20px;
+
+    .product {
+      flex: 0 0 33%;
+      box-sizing: border-box;
+      margin: 1rem 0;
+      padding: 0 20px;
+
+      img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        margin-bottom: 5px;
+      }
+
+      @media screen and (max-width: 768px) {
+        flex: 0 0 50%;
+      }
+
+      @media screen and (max-width: 576px) {
+        flex: 0 0 100%;
+      }
+
+      a {
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: $font-regular;
+        color: $fade-black;
+      }
+
+      .price {
+        font-size: 24px;
+        font-weight: $font-bold;
+        display: flex;
+        justify-content: center;
+      }
+
+      .button, input[type="submit"] {
+        font-family: $font-red-hat-display;
+        display: flex;
+        align-items: baseline;
+        width: max-content;
+        font-weight: $font-bold;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        border: 1px solid $primary-shade;
+        padding: 1rem 1.5rem;
+        font-size: 16px;
+        transition: all .5s ease-out;
+        color: $fade-white;
+        background-color: $primary-shade;
+        margin: auto;
+        margin-top: 1rem;
+
+        &:hover,
+        &:focus,
+        &:active {
+          border-color: $primary-shade;
+          background-color: transparent;
+          color: $primary-shade;
+        }
+
+      }
+    }
+  }
+}
+
+/* SINGLE PRODUCT -------------------------------------------------*/
+.single-product {
+  .product {
+    .product-info {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      min-height: 100vh;
+
+      .woocommerce-product-gallery {
+        flex: 0 0 50%;
+        max-width: 50%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 2rem;
+
+        .woocommerce-product-gallery__wrapper {
+          margin: 0;
+
+          .woocommerce-product-gallery__image {
+            display: flex !important;
+            justify-content: center;
+          }
+        }
+
+        .flex-control-nav.flex-control-thumbs {
+          display: flex;
+          justify-content: center;
+
+          li {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+
+      .summary {
+        flex: 0 0 50%;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 40px;
+        box-sizing: border-box;
+
+        .product_title {
+          font-family: $font-red-hat-display;
+          font-size: $h4-font-size-h4;
+          font-weight: $font-bold;
+          margin-bottom: 0;
+
+          @media screen and (max-width: 992px) {
+            font-size: 22px;
+          }
+        }
+
+        .price {
+          color: $primary-shade;
+          font-family: $font-red-hat-display;
+          font-weight: $font-bold;
+          font-size: $h3-font-size-h3;
+
+          @media screen and (max-width: 992px) {
+            font-size: 20px;
+          }
+        }
+
+        form.cart {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+
+          .quantity {
+            input {
+              padding: 16px 12px 16px 16px;
+              background: #FFFDFC;
+              border: 2px solid $grey-3;
+              font-size: $font-size-base;
+              color: $grey-1;
+            }
+          }
+
+          .button, input[type="submit"] {
+            font-family: $font-red-hat-display;
+            display: flex;
+            align-items: baseline;
+            width: max-content;
+            font-weight: $font-bold;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            border: 1px solid $primary-shade;
+            padding: 1rem 1.5rem;
+            font-size: 16px;
+            transition: all .5s ease-out;
+            color: $fade-white;
+            background-color: $primary-shade;
+
+            &:hover,
+            &:focus,
+            &:active {
+              border-color: $primary-shade;
+              background-color: transparent;
+              color: $primary-shade;
+            }
+
+          }
+
+        }
+
+        .product_meta {
+          .posted_in {
+            display: inline-block;
+            overflow: hidden;
+            text-indent: -9999px;
+
+            a {
+              font-family: $font-red-hat-display;
+              font-size: $up-titre-font-size;
+              font-weight: $font-regular;
+              color: $primary-shade;
+              letter-spacing: 0.1em;
+              opacity: 0.7;
+              text-indent: 0;
+              float: left;
+              text-transform: uppercase;
+              text-decoration: none;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+
+      }
+    }
+
+    .class-attendant {
+      height: 500px;
+      padding: 4rem 0;
+    }
+
+    .content-slogan {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .big-title {
+        font-size: 64px;
+        .handwriting {
+          font-size: 64px;
+        }
+        @media screen and (max-width: 992px) {
+          font-size: 46px;
+          .handwriting {
+            font-size: 38px;
+          }
+        }
+      }
+
+      .container-slogan-text {
+        padding: 6rem 0;
+      }
+
+      .content-text {
+        z-index: 1;
+        position: relative;
+        width: 70%;
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+      }
+
+      .element-graphique.graphique-eye-2 {
+        z-index: 0;
+        position: absolute;
+        top: 7rem;
+        right: 0;
+        width: 370px;
+        height: auto;
+      }
+    }
+
+    .container-partenaires {
+      margin: 4rem 0;
+      .content-title {
+        width: 65%;
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+      }
+      .row-partenaire {
+        margin-top: 2rem;
+      }
+      .col-partenaire {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 1rem 0;
+        img {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .woocommerce-Reviews {
+      width: 100%;
+      padding: 3rem 0;
+      #comments {
+        .commentlist {
+          list-style: none;
+          padding: 0;
+          .comment {
+            background-color: white;
+            padding: 2rem;
+            margin: 1rem 0;
+            &:first-of-type {
+              margin-top: 0;
+            }
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .up-sells {
+      width: 100%;
+      padding: 3rem 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .woocommerce-product-gallery {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .summary {
+        margin-top: 1.5rem;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 20px;
+      }
+    }
+  }
+}
