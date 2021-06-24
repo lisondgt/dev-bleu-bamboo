@@ -257,6 +257,11 @@ $woocommerce__color-info: #3d9cd2;
           li {
             display: flex;
             justify-content: center;
+            img {
+              width: 100px;
+              height: 100px;
+              object-fit: cover;
+            }
           }
         }
       }
