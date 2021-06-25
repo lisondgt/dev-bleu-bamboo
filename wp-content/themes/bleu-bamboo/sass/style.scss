@@ -44,6 +44,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 /* UTILS -------------------------------------------------*/
@@ -116,7 +117,7 @@ img {
     background-repeat: no-repeat;
   }
   @media screen and (max-width: 1200px) {
-    &:after {
+    .icon-underline, .icon-underline-1, .icon-underline-2 {
       display: none;
     }
   }
@@ -557,6 +558,7 @@ button:focus {
 /* HEADER -------------------------------------------------*/
 header {
   z-index: 9999;
+  top: 0;
   position: fixed;
   width: 100%;
   padding: 2rem 0;

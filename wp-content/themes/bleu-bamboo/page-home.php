@@ -49,9 +49,9 @@ get_header();
                             $container_class = 'container-fluid';
                             $p_0_class = '';
                             if ($style['position_image'] === 'gauche'):
-                                $p_0_class = 'ps-0';
+                                $p_0_class = 'ps-md-0';
                             else:
-                                $p_0_class = 'pe-0';
+                                $p_0_class = 'ps-md-0';
                             endif;
                         endif; ?>
 
