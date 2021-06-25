@@ -322,5 +322,21 @@ function woocommerce_custom_product_add_to_cart_text() {
     return __( 'Ajouter au panier', 'woocommerce' );
 }
 
+add_action( 'woocommerce_before_shop_loop_item_title', function(){
+    echo '<div class="image-wrapper">';
+}, 9 );
+add_action( 'woocommerce_before_shop_loop_item_title', function(){
+    echo '</div>';
+}, 11 );
+
+add_filter( 'woocommerce_upsell_display_args', 'wc_change_number_related_products', 20 );
+
+function wc_change_number_related_products( $args ) {
+
+    $args['posts_per_page'] = 3;
+    $args['columns'] = 3; //change number of upsells here
+    return $args;
+}
+
 
 

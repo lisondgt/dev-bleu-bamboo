@@ -67,10 +67,34 @@ $woocommerce__color-info: #3d9cd2;
       margin: 1rem 0;
       padding: 0 20px;
 
-      img {
-        width: 100%;
-        height: auto;
+      .image-wrapper {
+        background-color: white;
+        position: relative;
         margin-bottom: 1rem;
+        width: 100%;
+        padding: 3rem 0;
+
+        &:after {
+          content:'Je découvre le produit';
+          background-color: $primary-shade;
+          color: $fade-white;
+          font-weight: $font-bold;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 1rem 0;
+          bottom: 0;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          height: 0;
+          padding: 0;
+          transition: all ease-out .5s;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
 
       h2 {
@@ -89,6 +113,14 @@ $woocommerce__color-info: #3d9cd2;
         width: 100%;
         text-decoration: none;
         text-align: center;
+        &:hover {
+          .image-wrapper {
+            &:after {
+              padding: 1rem 0;
+              height: auto;
+            }
+          }
+        }
       }
 
       h2 {
@@ -105,34 +137,35 @@ $woocommerce__color-info: #3d9cd2;
       }
 
       .button, input[type="submit"] {
-        font-family: $font-red-hat-display;
-        display: flex;
-        align-items: baseline;
-        width: max-content;
-        font-weight: $font-bold;
-        text-align: center;
-        text-decoration: none;
-        vertical-align: middle;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        border: 1px solid $primary-shade;
-        padding: 1rem 1.5rem;
-        font-size: 16px;
-        transition: all .5s ease-out;
-        color: $fade-white;
-        background-color: $primary-shade;
-        margin: auto;
-        margin-top: 1rem;
-
-        &:hover,
-        &:focus,
-        &:active {
-          border-color: $primary-shade;
-          background-color: transparent;
-          color: $primary-shade;
-        }
+        display: none;
+        //font-family: $font-red-hat-display;
+        //display: flex;
+        //align-items: baseline;
+        //width: max-content;
+        //font-weight: $font-bold;
+        //text-align: center;
+        //text-decoration: none;
+        //vertical-align: middle;
+        //cursor: pointer;
+        //-webkit-user-select: none;
+        //-moz-user-select: none;
+        //user-select: none;
+        //border: 1px solid $primary-shade;
+        //padding: 1rem 1.5rem;
+        //font-size: 16px;
+        //transition: all .5s ease-out;
+        //color: $fade-white;
+        //background-color: $primary-shade;
+        //margin: auto;
+        //margin-top: 1rem;
+        //
+        //&:hover,
+        //&:focus,
+        //&:active {
+        //  border-color: $primary-shade;
+        //  background-color: transparent;
+        //  color: $primary-shade;
+        //}
 
       }
     }
@@ -150,10 +183,34 @@ $woocommerce__color-info: #3d9cd2;
       margin: 1rem 0;
       padding: 0 20px;
 
-      img {
-        width: 100%;
-        height: auto;
+      .image-wrapper {
+        background-color: white;
+        position: relative;
         margin-bottom: 1rem;
+        width: 100%;
+        padding: 3rem 0;
+
+        &:after {
+          content:'Je découvre le produit';
+          background-color: $primary-shade;
+          color: $fade-white;
+          font-weight: $font-bold;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 1rem 0;
+          bottom: 0;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          height: 0;
+          padding: 0;
+          transition: all ease-out .5s;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
 
       h2 {
@@ -172,6 +229,14 @@ $woocommerce__color-info: #3d9cd2;
         width: 100%;
         text-decoration: none;
         text-align: center;
+        &:hover {
+          .image-wrapper {
+            &:after {
+              padding: 1rem 0;
+              height: auto;
+            }
+          }
+        }
       }
 
       h2 {
@@ -188,34 +253,35 @@ $woocommerce__color-info: #3d9cd2;
       }
 
       .button, input[type="submit"] {
-        font-family: $font-red-hat-display;
-        display: flex;
-        align-items: baseline;
-        width: max-content;
-        font-weight: $font-bold;
-        text-align: center;
-        text-decoration: none;
-        vertical-align: middle;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        border: 1px solid $primary-shade;
-        padding: 1rem 1.5rem;
-        font-size: 16px;
-        transition: all .5s ease-out;
-        color: $fade-white;
-        background-color: $primary-shade;
-        margin: auto;
-        margin-top: 1rem;
-
-        &:hover,
-        &:focus,
-        &:active {
-          border-color: $primary-shade;
-          background-color: transparent;
-          color: $primary-shade;
-        }
+        display: none;
+        //font-family: $font-red-hat-display;
+        //display: flex;
+        //align-items: baseline;
+        //width: max-content;
+        //font-weight: $font-bold;
+        //text-align: center;
+        //text-decoration: none;
+        //vertical-align: middle;
+        //cursor: pointer;
+        //-webkit-user-select: none;
+        //-moz-user-select: none;
+        //user-select: none;
+        //border: 1px solid $primary-shade;
+        //padding: 1rem 1.5rem;
+        //font-size: 16px;
+        //transition: all .5s ease-out;
+        //color: $fade-white;
+        //background-color: $primary-shade;
+        //margin: auto;
+        //margin-top: 1rem;
+        //
+        //&:hover,
+        //&:focus,
+        //&:active {
+        //  border-color: $primary-shade;
+        //  background-color: transparent;
+        //  color: $primary-shade;
+        //}
 
       }
     }

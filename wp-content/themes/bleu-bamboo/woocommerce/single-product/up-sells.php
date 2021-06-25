@@ -33,7 +33,7 @@ if ( $upsells ) : ?>
 
             <div class="content-title">
                 <p class="up-titre">NOS AUTRES PRODUITS</p>
-                <h3>Si tu préfères commencer doucement...</h3>
+                <h3>Si tu préfères <span class="handwriting">commencer</span> doucement...</h3>
             </div>
 
             <?php woocommerce_product_loop_start(); ?>

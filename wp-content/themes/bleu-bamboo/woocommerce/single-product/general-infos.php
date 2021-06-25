@@ -8,7 +8,7 @@
         <div class="container">
             <div class="content-text">
                 <p class="up-titre">ÊTRE “SANS” ÇA PEUT AUSSI ÊTRE COOL !</p>
-                <span class="h1 big-title"><span class="handwriting">Nos produits<span class="icon-underline"></span></span> sont sans aluminium, sans parabens, sans silicones, sans sulfates, sans conservateurs, sans tensioactifs irritants... Nos produits sont <span class="handwriting">sans-façons.</span></span>
+                <span class="h1 big-title"><span class="handwriting custom-underline">Nos produits<span class="icon-underline-1"></span></span> sont sans aluminium, sans parabens, sans silicones, sans sulfates, sans conservateurs, sans tensioactifs irritants... Nos produits sont <span class="handwriting custom-circled-1">sans-façons.</span></span>
             </div>
             <img src="../../wp-content/themes/bleu-bamboo/images/elements_graphiques/eye-2.svg" class="element-graphique graphique-eye-2"/>
         </div>
@@ -20,7 +20,7 @@
     <div class="container-partenaires">
         <div class="content-title">
             <p class="up-titre">ET OUI, EN PLUS D’ÊTRE ÉCOLOS, ON EST CERTIFIÉS ET GÉNÉREUX !</p>
-            <h2>Parce qu’on veut le <span class="handwriting">meilleur</span> pour <span class="handwriting">vous</span> et la <span class="handwriting">planète...</span></h2>
+            <h2>Parce qu’on veut le <span class="handwriting">meilleur</span> pour <span class="handwriting custom-circled-2">vous</span> et la <span class="handwriting custom-underline">planète... <span class="icon-underline-2"></span></span></h2>
         </div>
         <div class="row justify-content-between row-partenaire">
             <div class="col-6 col-md-2 col-partenaire">
